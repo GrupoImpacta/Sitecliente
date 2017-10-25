@@ -1,98 +1,92 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Sastrería</title>
-	<meta charset "utf-8">
-</head>
-<body>
-    
-	 <div id="menu" >
-	    
-		<ul>
-			
-			<center><li><em style="font-family:Arial;">ârea</em></center>
-			 
+	<html>
+		<head>
+			<title>Sastreria</title>
+			<meta charset= "utf-8">
+			<link type="text/css" rel="stylesheet" href="estilo.css"/>
+			<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+			<link rel="stylesheet" type="text/css" href="estilo.css">
+			<script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+			<script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
+			<script>
+				$(function() {
+    				$( "#calendario" ).datepicker();
+				$( "#calendario2" ).datepicker();
+			});</script>
+			<style>
+				#menu ul li{
+				background-color:#DA70D6;
+				color: white;
+				text-align:center;
+				line-height: 70px;
+				font-size:40px;
+				border-radius: 50px;
+				}
+				#menu ul li:hover {
+					background-color:#DDA0DD;			
+				}
 		
-		</ul>
-	 <div/>
-     <div class="left">
-	 
-		<img src="imagem.png" width="100%">
+				#menu ul{
+					padding: 0;
+					}
+			</style>
+		</head>
+		<body>
+			<div id="menu" >
+				<ul>
+					<center><li><em><h1>Sansteria São Paulo</h1></em></center>		
+				</ul>
+	 		</div>
+    			<div class="left">
+				<img src="imagem.png" width="100%">
+	 		</div>
+     			<div class="right">
+				<center><img align="right" src="imagem2.jpg" width="25%"></center>
+			</div>
+			<div class="content-exercicio">
+				<center><form>
+					<h1><em>Formulario de pedido</em></h1>
 		
-	 </div>
-     <div class="right">
-		<center><img align="right" src="imagem2.jpg" width="25%"></center>
-		
-	<div class="content-exercicio">
-		
-	    
-		<center><form>
-		<h1><em>Formulario de pedido</em></h1>
-		
-		<input class="input-form" type="text" placeholder="NOME" name="Nome">
-		<em>NOME</em><br/>
-		
-		<input class="input-form" type="email" placeholder="EMAIL" name="Email">
-		<em>E-MAIL</em><br/>
-		
-		<input class="input-form" type="tel" placeholder="TELEFONE"  name="telefone">
-		<em>TELEFONE</em><br/>
-		
-		<input class="input-form" type="text"  placeholder="CPF" name="CPF">
-		<em>CPF</em><br/>
-		<p>
-		<label>
-		<h3>Tipo de serviço</h3>
-		</label>	
-		</p>
-		<select name="tipoServico">
-			<option value="0">selecione</option>
-			<option value="1">reparo</option>
-			<option value="2">ajuste</option>
-			<option value="3">confecção de nova peça</option>
-		</select>
-		<input class="input-form" type="text" placeholder="data do Pedido" id="calendario" />
-		<input class="input-form" type="text" placeholder="data de entrega" id="calendario2" />
-		<p>
-		Status de pagamento
-		</p>
-		<div class="input-radio">
-			<br><input type="radio" name="pagamento" value="sim"> Pago<br>
-			<input type="radio" name="pagamento" value="nao" checked="checked"> A pagar<br>
-		</div>
-		<label>
-		<p>
-		Descrição de serviço
-		</p>
-		</label>	
-		<textarea class="descricao">	
-		</textarea>
-	</form></center>
-	</div>
-	
-		
+					<input class="input-form" type="text" placeholder="NOME" name="Nome">
+					<em>NOME</em><br/>
+					<input class="input-form" type="email" placeholder="EMAIL" name="Email"/>
+					<em>E-MAIL</em><br/>
+					<input class="input-form" type="tel" placeholder="TELEFONE"  name="telefone"/>
+					<em>TELEFONE</em><br/>
+					<input class="input-form" type="text"  placeholder="CPF" name="CPF"/>
+					<em>CPF</em><br/>
+					<p><label>
+						<h3>Tipo de serviço</h3>
+					</label></p>
+					<select name="tipoServico">
+						<option value="0">selecione</option>
+						<option value="1">reparo</option>
+						<option value="2">ajuste</option>
+						<option value="3">confecção de nova peça</option>
+					</select>
+					<input class="input-form" type="text" placeholder="data do Pedido" id="calendario"/>
+					<input class="input-form" type="text" placeholder="data de entrega" id="calendario2"/>
+					<p>Status de pagamento</p>
+					<div class="input-radio">
+						<br><input type="radio" name="pagamento" value="sim"> Pago<br>
+						<input type="radio" name="pagamento" value="nao" checked="checked"> A pagar<br>
+					</div>
+					<label>
+						<p>Descrição de serviço</p>
+					</label>	
+					<textarea class="descricao">	
+					</textarea>
+				</form></center>
+			</div>
+	 		<img  align="right" src="imagem3.jpg" width="25%">
+     			<div id="footer">
+				<ul class="span4 col-sm-3 col-xs-12">
+                			<br><span class="rodape-site" align="center"><h3>Endereço: endereço aki</h3></span><br>
+                			<span class="rodape-site" align="center"><h3>De segunda à sexta – das 09h00 às 18h00</h3></span><br>
+                			<span class="rodape-site" align="center"><h3>Telefone - (11) Telefone</h3></span><br>
+                			<span class="rodape-site" align="center"><h3>E-mail - Insita e-mail aqui</h3></span><br>
+				</ul>
+			</div>	
+		</body>
 
-</div>
-
-	 <img  align="right" src="imagem3.jpg" width="25%">
-     <div id="footer">
-		<ul class="span4 col-sm-3 col-xs-12">
-
-                	<br><span class="rodape-site" align="center"><h3>Endereço: endereço aki</h3></span><br>
-
-                	<span class="rodape-site" align="center"><h3>De segunda à sexta – das 09h00 às 18h00</h3></span><br>
-
-                	<span class="rodape-site" align="center"><h3>Telefone - (11) Telefone</h3></span><br>
-
-                	<span class="rodape-site" align="center"><h3>E-mail - Insita e-mail aqui</h3></span><br>
-			</ul>
-	
-
-	</div>
-
-</div>
-
-	
-</body>
-
-</html>
+	</html>
